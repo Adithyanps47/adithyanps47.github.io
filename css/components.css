@@ -131,6 +131,12 @@
   color: var(--muted);
 }
 
+.section-ink .section-subtitle {
+  color: #062f36;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
 .hero h1 {
   max-width: 780px;
   font-size: clamp(2.05rem, 4.8vw, 4.45rem);
