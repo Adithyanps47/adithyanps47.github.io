@@ -409,7 +409,7 @@
 }
 
 .case-visual figcaption {
-  color: #0f172a;
+  color: #082f49;
   font-weight: 800;
 }
 
@@ -420,7 +420,9 @@
 
 .case-card p {
   margin-top: 0.55rem;
-  color: #1e293b;
+  color: #082f49;
+  font-weight: 650;
+  line-height: 1.72;
 }
 
 .case-card .mono-label {
@@ -429,6 +431,16 @@
 
 .case-link {
   width: max-content;
+  color: #f8fafc;
+  background: linear-gradient(135deg, #0f766e, #164e63);
+  border-color: rgba(6, 78, 59, 0.8);
+  box-shadow: 5px 5px 0 rgba(214, 255, 63, 0.9);
+}
+
+.case-link:hover,
+.case-link:focus-visible {
+  color: #ffffff;
+  background: linear-gradient(135deg, #115e59, #083344);
 }
 
 .case-actions,
