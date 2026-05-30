@@ -1,0 +1,134 @@
+﻿@media (max-width: 1020px) {
+  .hero-grid,
+  .about-learning-grid,
+  .case-study-grid,
+  .spotlight-grid,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .identity-board {
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: auto auto;
+    min-height: auto;
+    align-items: center;
+  }
+
+  .avatar {
+    grid-row: span 2;
+  }
+
+  .stats-strip,
+  .skills-matrix {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .projects-grid .project-card:nth-child(n) {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 1120px) {
+  .nav {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    display: grid;
+    gap: 0.7rem;
+    padding: 1rem 4vw 1.2rem;
+    border-bottom: 1px solid var(--line);
+    background: rgba(11, 12, 16, 0.96);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 180ms ease, opacity 180ms ease;
+  }
+
+  .nav.open {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 780px) {
+  .section {
+    padding: 4.2rem 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 4.4rem;
+  }
+
+  .hero-copy {
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 10vw, 3.25rem);
+  }
+
+  .identity-board,
+  .about-learning-grid,
+  .case-study-grid,
+  .stats-strip,
+  .experience-grid,
+  .skills-matrix,
+  .projects-grid,
+  .evidence-highlights,
+  .certificate-gallery,
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar {
+    width: min(260px, 100%);
+    grid-row: auto;
+  }
+
+  .projects-grid .project-card:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .card-topline,
+  .evidence-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-actions {
+    width: 100%;
+  }
+
+  .contact-actions .btn,
+  .hero-actions .btn,
+  .case-link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: min(100% - 1.4rem, 1180px);
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .stats-strip {
+    margin-top: 0.7rem;
+  }
+
+  .stat-card strong {
+    font-size: 2.1rem;
+  }
+}
+

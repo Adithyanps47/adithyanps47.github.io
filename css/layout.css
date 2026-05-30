@@ -1,0 +1,155 @@
+﻿.site-shell {
+  overflow: clip;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-header {
+  max-width: 780px;
+}
+
+.section-header.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-ink {
+  color: #091012;
+  background:
+    linear-gradient(90deg, rgba(9,16,18,0.12) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(9,16,18,0.1) 1px, transparent 1px),
+    linear-gradient(135deg, var(--acid), #8cf3ff 58%, #fff5d8);
+  background-size: 28px 28px, 28px 28px, auto;
+}
+
+.section-gridline {
+  border-block: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.section-glow {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,0.045) 1px, transparent 1px),
+    radial-gradient(circle at 12% 0%, rgba(214,255,63,0.18), transparent 32%),
+    radial-gradient(circle at 88% 25%, rgba(84,244,255,0.16), transparent 34%),
+    rgba(255, 255, 255, 0.035);
+  background-size: 30px 30px, 30px 30px, auto, auto, auto;
+}
+
+.hero {
+  min-height: calc(100vh - 74px);
+  padding: 6.4rem 0 2.8rem;
+  display: grid;
+  align-content: center;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 420px;
+}
+
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.about-learning-grid,
+.case-study-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.learning-card {
+  grid-column: 1 / -1;
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  gap: 1.4rem;
+  align-items: stretch;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.projects-grid .project-card:nth-child(1),
+.projects-grid .project-card:nth-child(2) {
+  grid-column: span 3;
+}
+
+.projects-grid .project-card:nth-child(n+3) {
+  grid-column: span 2;
+}
+
+.skills-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.evidence-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.certificate-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-section {
+  padding-top: 4rem;
+}
+
+.footer {
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.footer-container {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
